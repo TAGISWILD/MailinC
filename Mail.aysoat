@@ -1,7 +1,7 @@
 import smtplib
 
-sendergmailid = open("GmailUR","r")
-senderpass = open("PassUR","r")
+sendergmailid = open("GmailUR.txt","r")
+senderpass = open("PassUR.txt","r")
 
 socmail = sendergmailid.read()#"society.aysoat@gmail.com"
 password = senderpass.read()#"AYSOAT9176"

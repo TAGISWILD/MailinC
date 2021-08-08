@@ -25,4 +25,5 @@ ___
 ### We must always run the *fillDat()* after running *Init()* to avoid many errors.
 ### We must run *SendMail()* Whenever we want to send mail while executing.
 ___
+Queries? Watch our [video tutorial](youtube.com/c/aysoat)
 > Remember, we make use of python in background to make process easier

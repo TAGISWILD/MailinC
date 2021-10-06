@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <conio.h>
-#include "C:\Users\Atharva Chauhan\Desktop\Mail.h"
+#include "Mail.h"
 int main()
 {
 	Init(); //Remove or comment this line after first successful run

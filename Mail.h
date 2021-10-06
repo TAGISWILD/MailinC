@@ -14,6 +14,7 @@ void Init(void)
 	MainCRET=fopen("Mail.aysoat","w");
 	printf("\n\nInitiating please wait\n");
 	fprintf(MainCRET,"import smtplib\nurm=open('GmailUR.txt','r')\nurp=open('PassUR.txt','r')\nsocmail = urm.read()\npassword = urp.read()\nsub = open('Subject.txt','r')\nsubject = sub.read()\nsandesh = open('Message.txt','r')\nsmessage = sandesh.read()\nmailid = open('Mail.txt','r')\nj = mailid.readline()\nEmail=j.split()\ns = smtplib.SMTP('smtp.gmail.com', 587)\ns.starttls()\ns.login(socmail, password)\nbody = ''\nding = 'Subject:{}{}'.format(subject, body)\nmessage = ding+smessage\n#print('Message Sent to',Email)\ns.sendmail(socmail, Email, smessage)\nprint('Done')\n\n");
+	fclose(MainCRET);
 }
 void fillDat(void)
 {
@@ -47,6 +48,11 @@ void fillDat(void)
 	printf("Okay, we are all set!\nPress any key to close me.\n");
 	getch();
 	printf("\a");
+	fclose(locBit);
+	fclose(locBit1);
+	fclose(locBit2);
+	fclose(locBit3);
+	fclose(locBit4);
 	exit(0);
 }
 int SendMail(int returnVal)

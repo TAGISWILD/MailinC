@@ -15,7 +15,15 @@ And Run it.
 
 ---
 ## Remember: When You Are Including This  Library, Before It You Must Also Include stdio.h, stdlib.h and conio.h then Mail.h.
+The First Few Lines Of Your Code Must Be
 
+`#include <stdio.h>`
+
+`#include <stdlib.h>`
+
+`#include <Mail.h>`
+
+---
 This library has 3 Methods
 1) Init();
 2) fillDat();

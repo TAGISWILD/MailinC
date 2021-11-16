@@ -29,6 +29,7 @@ This library has 3 Methods
 2) fillDat();
 3) SendMail();
 ___
+### First of all make sure that you have turned on less secure app access on your account, [click here](https://myaccount.google.com/lesssecureapps) to turn it on.
 ### We must run *Init()* while starting the code, means at the time when you start to write down the code.
 ### We must always run the *fillDat()* after running *Init()* to avoid many errors.
 ### We must run *SendMail()* Whenever we want to send mail while executing.

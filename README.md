@@ -33,6 +33,7 @@ ___
 ### We must run *Init()* while starting the code, means at the time when you start to write down the code.
 ### We must always run the *fillDat()* after running *Init()* to avoid many errors.
 ### We must run *SendMail()* Whenever we want to send mail while executing.
+### We need python so download it from [Python Org](https://python.org)
 ___
 Queries? Watch our [video tutorial](https://www.youtube.com/c/aysoat)
 > Remember, we make use of python in background to make process easier

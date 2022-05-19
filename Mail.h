@@ -4,7 +4,7 @@
 	FILE* locBit3;
 	FILE* locBit4;
 	FILE* MainCRET;
-void Init(void)
+int Init(void)
 {
 	locBit = fopen("GmailUR.txt","w");
 	locBit1 =fopen("Mail.txt","w");

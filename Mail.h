@@ -11,9 +11,9 @@ int Init(void)
 	locBit2 =fopen("Message.txt","w");
 	locBit3 =fopen("PassUR.txt","w");
 	locBit4 =fopen("Subject.txt","w");	
-	MainCRET=fopen("Mail.aysoat","w");
+	MainCRET=fopen("mail.smtp","w");
 	printf("\n\nInitiating please wait\n");
-	fprintf(MainCRET,"import smtplib\nurm=open('GmailUR.txt','r')\nurp=open('PassUR.txt','r')\nsocmail = urm.read()\npassword = urp.read()\nsub = open('Subject.txt','r')\nsubject = sub.read()\nsandesh = open('Message.txt','r')\nsmessage = sandesh.read()\nmailid = open('Mail.txt','r')\nj = mailid.readline()\nEmail=j.split()\ns = smtplib.SMTP('smtp.gmail.com', 587)\ns.starttls()\ns.login(socmail, password)\nbody = ''\nding = 'Subject:{}{}'.format(subject, body)\nmessage = ding+smessage\n#print('Message Sent to',Email)\ns.sendmail(socmail, Email, smessage)\nprint('Done')\n\n");
+	fprintf(MainCRET,"import smtplib\nurm=open('GmailUR.txt','r')\nurp=open('PassUR.txt','r')\nsocmail = urm.read()\npassword = urp.read()\nsub = open('Subject.txt','r')\nsubject = sub.read()\nsandesh = open('Message.txt','r')\nsmessage = sandesh.read()\nmailid = open('Mail.txt','r')\nj = mailid.readline()\nEmail=j.split()\ns = smtplib.SMTP('smtp.gmail.com', 587)\ns.starttls()\ns.login(socmail, password)\n#body = ''\n#ding = 'Subject:{}{}'.format(subject, body)\nmess='Subject: {}\n\n{}'.format(subject, smessage)\n#print('Message Sent to',Email)\ns.sendmail(socmail, Email, smessage)\nprint('Mail Send!!')\n\n");
 	fclose(MainCRET);
 	return 0;
 }
@@ -58,7 +58,7 @@ void fillDat(void)
 }
 int SendMail(int returnVal)
 {
-system("python Mail.aysoat");
+system("python mail.smtp");
 switch(returnVal)
 {
 case 0:
@@ -71,5 +71,5 @@ default:
 return 0;
 break;	  	  	
 }
-system("attrib -h -s Mail.aysoat");
+system("attrib -h -s mail.smtp");
 }

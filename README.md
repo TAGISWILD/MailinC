@@ -12,6 +12,16 @@ Ex. If you are using Dev-Cpp Then goto `"C:\Program Files(x86)\Dev-Cpp\MinGW64\x
 ## Step 4
 Now just open the file `Example.cpp`
 And Run it.
+## Step 5
+enable 2 step authentication in gmail form which you will be sending email
+## Step 6
+below 2 step authentication you will se app password go there 
+i. Select app.
+ii.Select custom and enter "SMTP" (you can enter whatever you want).
+## Step 7
+press generate
+now you will see a password enter that password in PassUR.txt
+you are good to go now.
 
 ---
 ## Remember: When You Are Including This  Library, Before It You Must Also Include stdio.h, stdlib.h and conio.h then Mail.h.

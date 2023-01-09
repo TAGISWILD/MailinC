@@ -56,6 +56,12 @@ void fillDat(void)
 	fclose(locBit4);
 	exit(0);
 }
+int Setup()
+{
+	printf("First things first, read step 5, 6 & 7 carefully from the README.md\nPress enter to continue\n");
+	getch();
+	system("START https://myaccount.google.com/apppasswords");
+}
 int SendMail(int returnVal)
 {
 system("python mail.smtp");

@@ -16,7 +16,7 @@ And Run it.
 enable 2 step authentication in gmail form which you will be sending email
 ## Step 6
 below 2 step authentication you will se app password go there 
-i. Select app.
+i. In Select app select mail
 ii.Select custom and enter "SMTP" (you can enter whatever you want).
 ## Step 7
 press generate

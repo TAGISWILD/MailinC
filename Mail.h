@@ -29,12 +29,12 @@ void fillDat(void)
 	scanf("%s",&PASSWARD);
 	fprintf(locBit3,"%s",PASSWARD);
 	printf("\n\n\nOkay Step 1 is now completed!\nLet's Move Furthur\n\nPress Enter To Continue\n");
-	getch();
+	// getch();
 	system("CLS");
 	printf("Okay, now we are in step 2, Here we are filling information that can be changed many a times!!\n\n");
 	system("COLOR 0c");
 	printf("\n\n\aCAUTION: Here only one word input is accepted,\nIf you want a sentence then goto your project's folder\nand make changes in files.\n(Files that can be changed are: Subject.txt, Message.txt and Mail.txt)\n\nPress Enter To Continue\n\n");
-	getch();
+	// getch();
 	system("CLS");	
 	printf("Please enter the sender's Mail-ID (Only one word is accepted, Else this will crash!)\nMail:> ");
 	scanf("%s",&SENDMAIL);
@@ -47,7 +47,7 @@ void fillDat(void)
 	fprintf(locBit2,"%s",MESSAGE);
 	system("CLS");
 	printf("Okay, we are all set!\nPress any key to close me.\n");
-	getch();
+	// getch();
 	printf("\a");
 	fclose(locBit);
 	fclose(locBit1);
